@@ -1,0 +1,45 @@
+body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #26c6da;
+	}
+
+	.element {
+		position: relative;
+		width: 100px;
+		height: 40px;
+		background-color: #673ab7;
+	}
+
+	.element::before {
+		content:"";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 5px;
+		background-color: red;
+		transition: width .5s .5s linear;
+	}
+
+	.element:hover::before {
+		width: 100%;
+		transition: width .5s linear;
+	}
+
+	.element::after {
+		content:"";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 5px;
+		height: 0;
+		background-color: red;
+		transition: height .5s linear;
+	}
+
+	.element:hover::after {
+		height: 100%;
+		transition: height .5s .5s linear;
+	}
