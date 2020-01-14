@@ -1,18 +1,41 @@
-body {
+* {
+	margin: 0;
+	padding: 0;
+}
+
+	body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: #26c6da;
+		width: 100%;
+		height: 100%;
+		background: #e3f2fd;
+	}
+	.wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 250px;
+		height: 150px;
+		background: #b1bfca;
 	}
 
-	.element {
+	.wrap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 110px;
+		height: 50px;
+	}
+
+	.element1 {
 		position: relative;
 		width: 100px;
 		height: 40px;
 		background-color: #673ab7;
 	}
 
-	.element::before {
+	.element1::before {
 		content:"";
 		position: absolute;
 		top: 0;
@@ -23,12 +46,12 @@ body {
 		transition: width .5s .5s linear;
 	}
 
-	.element:hover::before {
+	.element1:hover::before {
 		width: 100%;
 		transition: width .5s linear;
 	}
 
-	.element::after {
+	.element1::after {
 		content:"";
 		position: absolute;
 		top: 0;
@@ -39,7 +62,80 @@ body {
 		transition: height .5s linear;
 	}
 
-	.element:hover::after {
+	.element1:hover::after {
 		height: 100%;
 		transition: height .5s .5s linear;
+	}
+
+	.element2{
+		position: relative;
+		width: 100px;
+		height: 40px;
+		background-color: #000063;
+	}
+
+	.element21{
+		position: relative;
+		width: 100px;
+		height: 40px;
+	}
+
+	.element2::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 5px;
+		background-color: red;
+	}
+
+	.element2:hover::before{
+		width: 100%;
+		transition: width .5s linear;
+	}
+
+	.element21::before{
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 5px;
+		background-color: red;
+	}
+
+	.element21:hover::before{
+		width: 100%;
+		transition: width .5s 1s linear;
+	}
+
+	.element2::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 5px;
+		height: 0;
+		background-color: red;
+	}
+
+	.element21::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 5px;
+		height: 0;
+		background-color: red;
+	}
+
+	.element2:hover::after{
+		height: 100%;
+		transition: height .5s .5s linear;
+	}
+
+	.element21:hover::after{
+		height: 100%;
+		transition: height .5s 1.5s linear;
 	}
