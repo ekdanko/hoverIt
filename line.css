@@ -2,7 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+h3{
+	text-align: center;
+}
 span{
 	font-family: "Arial",sans-serif;
 	font-size: 14px;
