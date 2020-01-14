@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+span{
+	font-family: "Arial",sans-serif;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
 	body{
 		display: flex;
 		justify-content: center;
@@ -220,4 +226,35 @@
 	.element31:hover::after{
 		height: 100%;
 		transition: height .5s 1.5s linear;
+	}
+
+	/*окно с заданьками*/
+	.content{
+		position: relative;
+
+	}
+	.window_wrap{
+		display: block;
+		position: absolute;
+		/*display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		*/
+		width: 400px;
+		height: auto;
+		left: 0;
+		bottom: 0;
+
+	}
+
+	.window_head{
+		display: block;
+		height: 30px;
+		background: #4db6ac;
+	}
+
+	.window_body{
+		display: block;
+		height: 500px;
+		background: #fff;
 	}
