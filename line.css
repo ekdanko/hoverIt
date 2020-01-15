@@ -235,6 +235,30 @@ h3{
 
 	}
 
+	/*4элемент*/
+	.element4 {
+		width: 100px;
+		height: 40px;
+		background-color: #673ab7;
+		position: relative;
+	}
+
+	.element4::before{
+		position: absolute;
+		content: "";
+		left: 50%;
+		bottom:0;
+		width: 0;
+		transform: translateX(-50%);
+	}
+
+	.element4::before:hover {
+		width: 100%;
+	
+		transition: width .5s linear;
+		
+	}
+
 	/*окно с заданьками*/
 	.content{
 		
