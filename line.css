@@ -252,18 +252,14 @@ h3{
 		transform: translateX(-50%);
 	}
 
-	.element4::before:hover {
+	.element4:hover::before{
 		width: 100%;
-	
-		transition: width .5s linear;
+		transition: width .5s ease;
 		
 	}
 
 	/*окно с заданьками*/
-	.content{
-		
 
-	}
 	.window_wrap{
 		position: fixed;
 		width: 400px;
