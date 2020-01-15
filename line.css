@@ -241,23 +241,49 @@ h3{
 
 	}
 	.window_wrap{
-		display: fixed;
+		position: fixed;
 		width: 400px;
 		height: auto;
 		text-align: center;
+		left: 10px;
+		bottom: 10px;
+		/*box-shadow: 0 0 9px -2px #00867d;*/
+		border:1px solid #4db6ac;
 
 	}
 
 	.window_head{
 		display: block;
-		height: 30px;
+		height: 40px;
+		line-height: 40px;
 		background: #4db6ac;
+		user-select: none;
+		border-bottom: 5px solid #00867d;
+	}
+	input{
+		display: none;
+	}
+
+	#collapse:checked ~ .window_body{
+		display: block;
+	}
+
+	.col_img{
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		background: url(arrow-down.svg) 0 5px no-repeat;
+		background-size: 20px 20px;
+	}
+	.col_img:hover{
+		h
 	}
 
 	.window_body{
 		position: relative;
-		height: 500px;
 		background: #fff;
+		height: 200px;
+		display: none;
 	}
 
 	.window_button{
@@ -271,6 +297,9 @@ h3{
 		height: 40px;
 		border-radius: 5%;
 		background: #00867d;
+		line-height: 40px;
+		user-select: none;
+		cursor: pointer;
 
 	}
 
