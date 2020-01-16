@@ -343,9 +343,8 @@ h3{
 
 	.window_wrap{
 		position: fixed;
-		width: 400px;
+		width: 500px;
 		height: auto;
-		text-align: center;
 		left: 10px;
 		bottom: 10px;
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #1f8476;
@@ -360,6 +359,7 @@ h3{
 		background: #4db6ac;
 		user-select: none;
 		border-bottom: 5px solid #00867d;
+		text-align: center;
 	}
 	input{
 		display: none;
@@ -383,8 +383,15 @@ h3{
 	.window_body{
 		position: relative;
 		background: #fff;
-		height: 200px;
+		height: auto;
 		display: none;
+		padding-bottom: 50px;
+	}
+
+	ol{
+		margin:30px;
+		padding: 10px 0;
+
 	}
 
 	.window_button{
@@ -401,6 +408,7 @@ h3{
 		line-height: 40px;
 		user-select: none;
 		cursor: pointer;
+		text-align: center;
 
 	}
 
