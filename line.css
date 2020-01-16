@@ -249,7 +249,9 @@ h3{
 		left: 50%;
 		bottom:0;
 		width: 0;
+		height: 5px;
 		transform: translateX(-50%);
+		background-color: red;
 	}
 
 	.element4:hover::before{
