@@ -24,13 +24,16 @@ h3{
 		justify-content: center;
 		align-items: center;
 		width: 250px;
-		height: 200px;
+		height: 400px;
 		background: #b1bfca;
 		flex-wrap: wrap;
 	}
 
 	.wrap{
+		position: relative;
 		margin: 10px;
+		width: 100px;
+		height: 40px;
 	}
 	/*1элемент*/
 	.element1 {
@@ -339,6 +342,58 @@ h3{
 		height: 100%;
 		transition: height .5s ease;
 	}
+
+	/*параллелограмм*/
+
+	.parapa{
+		position: absolute;
+		display: block;
+		width: 80px;
+		height: 40px;
+		background: #00363a;
+		left: 50%;
+		transform: translateX(-50%);
+		top:0;
+
+	}
+	.parapa:hover{
+		width: 50px;
+		transition: width .3s linear;
+	}
+
+	.parapa::before{
+		content: "";
+		position: absolute;
+		right: calc(100% - 1px);
+		top:0;
+		border-right: 15px solid #00363a;
+		border-top: 40px solid transparent;
+		
+	}
+
+	.parapa:hover::before{
+		border-right: 30px solid #00363a;
+		border-top: 40px solid transparent;
+		transition: border .3s linear;
+	}
+
+
+	.parapa::after{
+		content: "";
+		position: absolute;
+		left: calc(100% - 1px);
+		top:0;
+		border-left: 15px solid #00363a;
+		border-bottom: 40px solid transparent;
+	}
+
+	.parapa:hover::after{
+		transition: border .3s linear;
+		border-left: 30px solid #00363a;
+		border-bottom: 40px solid transparent;
+	}
+
+
 	/*окно с заданьками*/
 
 	.window_wrap{
