@@ -24,7 +24,7 @@ h3{
 		justify-content: center;
 		align-items: center;
 		width: 250px;
-		height: 140px;
+		height: 200px;
 		background: #b1bfca;
 		flex-wrap: wrap;
 	}
@@ -247,7 +247,8 @@ h3{
 		position: absolute;
 		content: "";
 		left: 50%;
-		bottom:0;
+		/*bottom:-5px;*/
+		top:100%;
 		width: 0;
 		height: 5px;
 		transform: translateX(-50%);
@@ -260,6 +261,84 @@ h3{
 		
 	}
 
+	/*5 элемент*/
+	.element5{
+		width: 100px;
+		height: 40px;
+		background: #000063;
+		position: relative;
+	}
+	.element5::before{
+		position: absolute;
+		content: "";
+		background-color: red;
+		height: 5px;
+		width: 0;
+		top:-5px;
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+
+	.element5:hover::before{
+	width:100%;
+	transition: width .5s ease;
+	}
+	
+	.element5::after{
+		position: absolute;
+		content: "";
+		background-color: red;
+		height: 0;
+		width: 5px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+	}
+
+	.element5:hover::after{
+		height: 100%;
+		transition: height .5s ease;
+	}
+
+	.element51{
+		width: 100px;
+		height: 40px;
+		position: relative;
+	}
+
+	.element51::before{
+		position: absolute;
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -5px;
+		width: 0;
+		height: 5px;
+		background-color: red;
+
+	}
+
+	.element51:hover::before{
+		width: 100%;
+		transition: width .5s ease;
+	}
+
+	.element51::after{
+		position: absolute;
+		content: "";
+		top:50%;
+		transform: translateY(-50%);
+		left: 0;
+		background-color: red;
+		height: 0;
+		width: 5px;
+
+	}
+	.element51:hover::after{
+		height: 100%;
+		transition: height .5s ease;
+	}
 	/*окно с заданьками*/
 
 	.window_wrap{
@@ -269,7 +348,7 @@ h3{
 		text-align: center;
 		left: 10px;
 		bottom: 10px;
-		/*box-shadow: 0 0 9px -2px #00867d;*/
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #1f8476;
 		border:1px solid #4db6ac;
 
 	}
